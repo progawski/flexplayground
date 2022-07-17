@@ -10,6 +10,201 @@
 </head>
 <body>
     <h1>FLEX</h1>
-    <h2>PLAYGROUND</h2>
+    <h3>PLAYGROUND</h3>
+    <div id="main-row" class="row">
+        <div class="col">
+            <h3>Code</h3>
+            <ul id="code-container">
+                <li><div class="marker"></div><span class="selector">#playground-container</span><span class="white">{</span></li>
+                <li><div class="marker"></div><span class="property">display</span><span class="white">: </span><span class="property-value">flex</span><span class="white">;</span></li>
+                <li><div class="marker"></div><span class="property">overflow</span><span class="white">: </span><span class="property-value">hidden</span><span class="white">;</span></li>
+                <li><div class="marker"></div><span class="property">flex-direction</span><span class="white">: </span>
+                    <select id="flex-direction">
+                        <option value="row">row</option>
+                        <option value="column">column</option>
+                        <option value="row-reverse">row-reverse</option>
+                        <option value="column-reverse">column-reverse</option>
+                    </select>
+                    <span class="white">;</span>
+                </li> 
+                <li><div class="marker"></div><span class="property">justify-content</span><span class="white">: </span>
+                    <select id="justify-content">
+                        <option value="flex-start">flex-start</option>
+                        <option value="flex-end">flex-end</option>
+                        <option value="center">center</option>
+                        <option value="space-between">space-between</option>
+                        <option value="space-around">space-around</option>
+                        <option value="space-evenly">space-evenly</option>
+                    </select>
+                    <span class="white">;</span>
+                </li> 
+                <li><div class="marker"></div><span class="property">align-items</span><span class="white">: </span>
+                    <select id="align-items">
+                        <option value="stretch">stretch</option>
+                        <option value="center">center</option>
+                        <option value="flex-start">flex-start</option>
+                        <option value="flex-end">flex-end</option>
+                    </select>
+                    <span class="white">;</span>
+                </li> 
+                <li><div class="marker"></div><span class="property">flex-wrap</span><span class="white">: </span>
+                    <select id="flex-wrap">
+                        <option value="nowrap">nowrap</option>
+                        <option value="wrap">wrap</option>
+                        <option value="wrap-reverse">wrap-reverse</option>
+                    </select>
+                    <span class="white">;</span>
+                </li> 
+                <li><div class="marker"></div><span class="property">align-content</span><span class="white">: </span>
+                    <select id="align-content">
+                        <option value="stretch">stretch</option>
+                        <option value="center">center</option>
+                        <option value="flex-start">flex-start</option>
+                        <option value="flex-end">flex-end</option>
+                        <option value="space-between">space-between</option>
+                        <option value="space-around">space-around</option>
+                        <option value="space-evenly">space-evenly</option>
+                    </select>
+                    <span class="white">;</span>
+                </li> 
+                <li><div class="marker"></div><span class="white">}</span></li>
+                <li><div class="marker"></div><span class="selector">#r-square</span><span class="white">{</span></li>
+                    <li><div class="marker"></div><span class="property">width</span><span class="white">: </span>
+                        <input type="text" id="r-width" class="square-size" value="100">
+                        <select id="r-width-unit" class="square-size-unit">
+                            <option value="px">px</option>
+                            <option value="%">%</option>
+                        </select>
+                        <span class="white">;</span>
+                    </li>
+                    <li><div class="marker"></div><span class="property">height</span><span class="white">: </span>
+                        <input type="text" id="r-height" class="square-size" value="100">
+                        <select id="r-height-unit" class="square-size-unit">
+                            <option value="px">px</option>
+                            <option value="%">%</option>
+                        </select>
+                        <span class="white">;</span>
+                    </li>
+                    <li><div class="marker"></div><span class="property">order</span><span class="white">: </span>
+                        <input type="text" id="r-order" class="square-order" value="0">
+                        <span class="white">;</span>
+                    </li>
+                    <li><div class="marker"></div><span class="property">flex-grow</span><span class="white">: </span>
+                        <input type="text" id="r-flex-grow" class="square-flex-grow" value="0">
+                        <span class="white">;</span>
+                    </li>
+                    <li><div class="marker"></div><span class="property">flex-shrink</span><span class="white">: </span>
+                        <input type="text" id="r-flex-shrink" class="square-flex-shrink" value="1">
+                        <span class="white">;</span>
+                    </li>
+                    <li><div class="marker"></div><span class="property">align-self</span><span class="white">: </span>
+                        <select id="r-align-self" class="square-align-self">
+                            <option value="auto">auto</option>
+                            <option value="stretch">stretch</option>
+                            <option value="center">center</option>
+                            <option value="flex-start">flex-start</option>
+                            <option value="flex-end">flex-end</option>
+                        </select>
+                        <span class="white">;</span>
+                    </li>
+                <li><div class="marker"></div><span class="white">}</span></li>
+                    <li><div class="marker"></div><span class="selector">#g-square</span><span class="white">{</span></li>
+                    <li><div class="marker"></div><span class="property">width</span><span class="white">: </span>
+                        <input type="text" id="g-width" class="square-size" value="100">
+                        <select id="g-width-unit" class="square-size-unit">
+                            <option value="px">px</option>
+                            <option value="%">%</option>
+                        </select>
+                        <span class="white">;</span>
+                    </li>
+                    <li><div class="marker"></div><span class="property">height</span><span class="white">: </span>
+                        <input type="text" id="g-height" class="square-size" value="100">
+                        <select id="g-height-unit" class="square-size-unit">
+                            <option value="px">px</option>
+                            <option value="%">%</option>
+                        </select>
+                        <span class="white">;</span>
+                    </li>
+                    <li><div class="marker"></div><span class="property">order</span><span class="white">: </span>
+                        <input type="text" id="g-order" class="square-order" value="0">
+                        <span class="white">;</span>
+                    </li>
+                    <li><div class="marker"></div><span class="property">flex-grow</span><span class="white">: </span>
+                        <input type="text" id="g-flex-grow" class="square-flex-grow" value="0">
+                        <span class="white">;</span>
+                    </li>
+                    <li><div class="marker"></div><span class="property">flex-shrink</span><span class="white">: </span>
+                        <input type="text" id="g-flex-shrink" class="square-flex-shrink" value="1">
+                        <span class="white">;</span>
+                    </li>
+                    <li><div class="marker"></div><span class="property">align-self</span><span class="white">: </span>
+                        <select id="g-align-self" class="square-align-self">
+                            <option value="auto">auto</option>
+                            <option value="stretch">stretch</option>
+                            <option value="center">center</option>
+                            <option value="flex-start">flex-start</option>
+                            <option value="flex-end">flex-end</option>
+                        </select>
+                        <span class="white">;</span>
+                    </li>
+                <li><div class="marker"></div><span class="white">}</span></li>
+                <li><div class="marker"></div><span class="selector">#b-square</span><span class="white">{</span></li>
+                    <li><div class="marker"></div><span class="property">width</span><span class="white">: </span>
+                        <input type="text" id="b-width" class="square-size" value="100">
+                        <select id="b-width-unit" class="square-size-unit">
+                            <option value="px">px</option>
+                            <option value="%">%</option>
+                        </select>
+                        <span class="white">;</span>
+                    </li>
+                    <li><div class="marker"></div><span class="property">height</span><span class="white">: </span>
+                        <input type="text" id="b-height" class="square-size" value="100">
+                        <select id="b-height-unit" class="square-size-unit">
+                            <option value="px">px</option>
+                            <option value="%">%</option>
+                        </select>
+                        <span class="white">;</span>
+                    </li>
+                    <li><div class="marker"></div><span class="property">order</span><span class="white">: </span>
+                        <input type="text" id="b-order" class="square-order" value="0">
+                        <span class="white">;</span>
+                    </li>
+                    <li><div class="marker"></div><span class="property">flex-grow</span><span class="white">: </span>
+                        <input type="text" id="b-flex-grow" class="square-flex-grow" value="0">
+                        <span class="white">;</span>
+                    </li>
+                    <li><div class="marker"></div><span class="property">flex-shrink</span><span class="white">: </span>
+                        <input type="text" id="b-flex-shrink" class="square-flex-shrink" value="1">
+                        <span class="white">;</span>
+                    </li>
+                    <li><div class="marker"></div><span class="property">align-self</span><span class="white">: </span>
+                        <select id="b-align-self" class="square-align-self">
+                            <option value="auto">auto</option>
+                            <option value="stretch">stretch</option>
+                            <option value="center">center</option>
+                            <option value="flex-start">flex-start</option>
+                            <option value="flex-end">flex-end</option>
+                        </select>
+                        <span class="white">;</span>
+                    </li>
+                <li><div class="marker"></div><span class="white">}</span></li>
+            </ul>
+        </div>  
+        <div class="col">
+            <h3>Playground</h3>
+            <div class="row">
+                <input id="playground-height-slider" type="range" min="1" max="100" value="100" >
+                <div id="playground-outer-container">
+                    <div id="playground-container">
+                        <div id="r-square" class="square"></div>
+                        <div id="g-square" class="square"></div>
+                        <div id="b-square" class="square"></div>
+                    </div>
+                </div>
+            </div>
+            <input id="playground-width-slider" type="range" min="1" max="100" value="100">
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
