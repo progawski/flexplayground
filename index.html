@@ -74,6 +74,7 @@
                         <select id="r-width-unit" class="square-size-unit">
                             <option value="px">px</option>
                             <option value="%">%</option>
+                            <option value="auto">auto</option>
                         </select>
                         <span class="white">;</span>
                     </li>
@@ -82,6 +83,7 @@
                         <select id="r-height-unit" class="square-size-unit">
                             <option value="px">px</option>
                             <option value="%">%</option>
+                            <option value="auto">auto</option>
                         </select>
                         <span class="white">;</span>
                     </li>
@@ -89,6 +91,7 @@
                         <input type="text" id="r-order" class="square-order" value="0">
                         <span class="white">;</span>
                     </li>
+                    <li><div class="marker"></div><span class="comment">//flex: flex-grow flex-shrink flex-basis</span></li>
                     <li><div class="marker"></div><span class="property">flex-grow</span><span class="white">: </span>
                         <input type="text" id="r-flex-grow" class="square-flex-grow" value="0">
                         <span class="white">;</span>
@@ -97,6 +100,18 @@
                         <input type="text" id="r-flex-shrink" class="square-flex-shrink" value="1">
                         <span class="white">;</span>
                     </li>
+                    <li><div class="marker"></div><span class="property">flex-basis</span><span class="white">: </span>
+                        <input type="text" id="r-flex-basis" class="square-flex-basis" value="150" disabled>
+                        <select id="r-flex-basis-unit" class="square-flex-basis-unit">
+                            <option value="px">px</option>
+                            <option value="%">%</option>
+                            <option value="auto" selected>auto</option>
+                        </select>
+                        <span class="white">;</span>
+                    </li>
+                    <li><div class="marker"></div><span class="comment">/* In order to see stretch effect, set</span></li>
+                    <li><div class="marker"></div><span class="comment">square's width/height to auto respectively</span></li>
+                    <li><div class="marker"></div><span class="comment">for column/row */</span></li>
                     <li><div class="marker"></div><span class="property">align-self</span><span class="white">: </span>
                         <select id="r-align-self" class="square-align-self">
                             <option value="auto">auto</option>
@@ -122,6 +137,7 @@
                         <select id="g-height-unit" class="square-size-unit">
                             <option value="px">px</option>
                             <option value="%">%</option>
+                            <option value="auto">auto</option>
                         </select>
                         <span class="white">;</span>
                     </li>
@@ -129,6 +145,7 @@
                         <input type="text" id="g-order" class="square-order" value="0">
                         <span class="white">;</span>
                     </li>
+                    <li><div class="marker"></div><span class="comment">//flex: flex-grow flex-shrink flex-basis</span></li>
                     <li><div class="marker"></div><span class="property">flex-grow</span><span class="white">: </span>
                         <input type="text" id="g-flex-grow" class="square-flex-grow" value="0">
                         <span class="white">;</span>
@@ -137,6 +154,18 @@
                         <input type="text" id="g-flex-shrink" class="square-flex-shrink" value="1">
                         <span class="white">;</span>
                     </li>
+                    <li><div class="marker"></div><span class="property">flex-basis</span><span class="white">: </span>
+                        <input type="text" id="g-flex-basis" class="square-flex-basis" value="150" disabled>
+                        <select id="g-flex-basis-unit" class="square-flex-basis-unit">
+                            <option value="px">px</option>
+                            <option value="%">%</option>
+                            <option value="auto" selected>auto</option>
+                        </select>
+                        <span class="white">;</span>
+                    </li>
+                    <li><div class="marker"></div><span class="comment">/* In order to see stretch effect, set</span></li>
+                    <li><div class="marker"></div><span class="comment">square's width/height to auto respectively</span></li>
+                    <li><div class="marker"></div><span class="comment">for column/row */</span></li>
                     <li><div class="marker"></div><span class="property">align-self</span><span class="white">: </span>
                         <select id="g-align-self" class="square-align-self">
                             <option value="auto">auto</option>
@@ -162,6 +191,7 @@
                         <select id="b-height-unit" class="square-size-unit">
                             <option value="px">px</option>
                             <option value="%">%</option>
+                            <option value="auto">auto</option>
                         </select>
                         <span class="white">;</span>
                     </li>
@@ -169,6 +199,7 @@
                         <input type="text" id="b-order" class="square-order" value="0">
                         <span class="white">;</span>
                     </li>
+                    <li><div class="marker"></div><span class="comment">//flex: flex-grow flex-shrink flex-basis</span></li>
                     <li><div class="marker"></div><span class="property">flex-grow</span><span class="white">: </span>
                         <input type="text" id="b-flex-grow" class="square-flex-grow" value="0">
                         <span class="white">;</span>
@@ -177,6 +208,18 @@
                         <input type="text" id="b-flex-shrink" class="square-flex-shrink" value="1">
                         <span class="white">;</span>
                     </li>
+                    <li><div class="marker"></div><span class="property">flex-basis</span><span class="white">: </span>
+                        <input type="text" id="g-flex-basis" class="square-flex-basis" value="150" disabled>
+                        <select id="g-flex-basis-unit" class="square-flex-basis-unit">
+                            <option value="px">px</option>
+                            <option value="%">%</option>
+                            <option value="auto" selected>auto</option>
+                        </select>
+                        <span class="white">;</span>
+                    </li>
+                    <li><div class="marker"></div><span class="comment">/* In order to see stretch effect, set</span></li>
+                    <li><div class="marker"></div><span class="comment">square's width/height to auto respectively</span></li>
+                    <li><div class="marker"></div><span class="comment">for column/row */</span></li>
                     <li><div class="marker"></div><span class="property">align-self</span><span class="white">: </span>
                         <select id="b-align-self" class="square-align-self">
                             <option value="auto">auto</option>

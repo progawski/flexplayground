@@ -27,7 +27,6 @@ h3 {
 
 #main-row {
   gap: 50px;
-  height: 500px;
 }
 
 .row {
@@ -41,17 +40,19 @@ h3 {
   flex: 1;
 }
 
-#code-container, #code-squares {
+#code-container {
   border: 1px solid #000;
   list-style: none;
   background-color: #1d1e22;
   font-family: "Source Code Pro", monospace;
   padding: 10px;
   overflow-y: scroll;
+  height: 500px;
 }
 
-#code-container li, #code-squares li {
+#code-container li {
   height: 2em;
+  white-space: nowrap;
 }
 
 .marker {
@@ -86,7 +87,9 @@ h3 {
 }
 
 .comment {
+  display: inline-block;
   color: #669352;
+  text-indent: 15px;
 }
 
 input[type=text], select {
@@ -104,6 +107,11 @@ input[type=text] {
   text-align: right;
 }
 
+input:disabled {
+  color: #343638;
+  text-decoration: line-through;
+}
+
 #settings-container {
   display: flex;
   border: 1px solid #000;
@@ -116,6 +124,7 @@ input[type=text] {
   align-items: center;
   border: 1px solid #000;
   flex: 1;
+  height: 500px;
 }
 
 #playground-container {
