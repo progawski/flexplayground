@@ -152,6 +152,7 @@ input:disabled{
 #playground-outer-container{
     display: flex;
     justify-content: center;
+    overflow: hidden;
     align-items: center;
     border: $black-border;
     flex: 1;
@@ -170,7 +171,7 @@ input:disabled{
     background-color: rgba(251, 255, 0, 0.08);
     height: 100%;
     width: 100%;
-    position: relative;
+    box-sizing: border-box;
 }
 
 .square{
